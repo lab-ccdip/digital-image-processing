@@ -1,4 +1,4 @@
-rgbImage = imread('img.jpg');  
+rgbImage = imread('flower.jpg');  
 hsvImage = rgb2hsv(rgbImage); 
 figure; 
 subplot(2,2,1); 
