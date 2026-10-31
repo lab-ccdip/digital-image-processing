@@ -1,7 +1,7 @@
 clc;
 clear;
 close all;
-img = imread('flower.jpg');
+img = imread('img.jpg');
 figure;
 subplot(2,2,1);
 imshow(img); 
