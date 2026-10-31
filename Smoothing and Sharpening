@@ -1,0 +1,19 @@
+clc;
+clear;
+close all;
+img = imread('flower.jpg');
+figure;
+subplot(2,2,1);
+imshow(img); 
+title('Original Image');
+avgFilter = fspecial('average', [5 5]); 
+smooth_avg = imfilter(img, avgFilter, 'replicate'); 
+subplot(2,2,2); 
+imshow(smooth_avg);
+title('Average Filtered Image');
+sharp_img = imsharpen(img, ...
+'Radius', 2, ...
+'Amount', 1.5); 
+subplot(2,2,3); 
+imshow(sharp_img);
+title('Sharpened Image');
