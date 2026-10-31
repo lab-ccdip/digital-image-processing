@@ -1,0 +1,18 @@
+rgbImage = imread('flower.jpg');  
+hsvImage = rgb2hsv(rgbImage); 
+figure; 
+subplot(2,2,1); 
+imshow(rgbImage); 
+title('RGB Image');
+subplot(2,2,2); 
+imshow(hsvImage); 
+title('HSV Image'); 
+subplot(2,2,3); 
+imshow(hsvImage(:,:,1)); 
+title('Hue (H)');
+subplot(2,2,4); 
+imshow(hsvImage(:,:,2)); 
+title('Saturation (S)');
+figure; 
+imshow(hsvImage(:,:,3)); 
+title('Value (V)');
