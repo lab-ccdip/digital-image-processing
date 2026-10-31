@@ -1,0 +1,13 @@
+img = imread('flower.jpg');
+grayImg = rgb2gray(img);
+Negative = imcomplement(img);  
+figure;
+subplot(1,3,1);
+imshow(img);
+title('Original Image');
+subplot(1,3,2);
+imshow(grayImg); 
+title('Grayscale Image');
+subplot(1,3,3); 
+imshow(Negative);
+title('Negative Image'); 
