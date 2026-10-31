@@ -1,7 +1,7 @@
 clc; 
 clear; 
 close all; 
-I = imread('flower.jpg');
+I = imread('img.jpg');
 if size(I,3) == 3 
     Igray = rgb2gray(I); 
 else
