@@ -1,4 +1,4 @@
-img = imread('flower.jpg');
+img = imread('img.jpg');
 grayImg = rgb2gray(img);
 Negative = imcomplement(img);  
 figure;
