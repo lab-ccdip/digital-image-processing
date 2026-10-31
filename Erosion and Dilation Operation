@@ -1,7 +1,7 @@
 clc;  
 clear;
 close all;
-f = imread('flower.jpg');
+f = imread('img.jpg');
 se = strel('square', 20); 
 fo = imopen(f, se);
 figure;
